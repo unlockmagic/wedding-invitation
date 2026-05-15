@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Eternal Vows | Wedding Invitation</title>
+    <meta name="description" content="Join us in celebrating the beginning of our forever. A cinematic luxury wedding invitation experience.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<!-- Global Cinematic Opening -->
+<div id="opening-overlay" class="opening-overlay">
+    <div class="opening-content">
+        <h2 class="opening-title">You are Invited</h2>
+        <div class="opening-divider"></div>
+        <p class="opening-names">Groom & Bride</p>
+        <button id="unveil-btn" class="unveil-btn">Unveil Invitation</button>
+    </div>
+</div>
+
+<!-- Music Player -->
+<div id="music-player" class="music-player">
+    <div class="cd-container" id="cd-toggle">
+        <img src="./icons/cd.png" alt="CD" id="cd-icon" class="cd-icon">
+    </div>
+    <audio id="bg-music" loop>
+        <source src="./music/song.mp3" type="audio/mpeg">
+    </audio>
+</div>
+
+<!-- Decorative Floating Elements -->
+<div class="floating-decorations">
+    <img src="./images/leaves-gold-corners.png" alt="" class="float-element float-1">
+    <img src="./images/leaves-gold-corners.png" alt="" class="float-element float-2">
+</div>
+
+<main id="main-content" class="hidden">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section-reveal">
+        <div class="hero-bg" style="background-image: url('./images/10.jpeg');"></div>
+        <div class="decorative-elements">
+            <img src="./images/leaves-gold-corners.png" alt="" class="floral-corner top-left">
+            <img src="./images/leaves-gold-corners.png" alt="" class="floral-corner bottom-right">
+            <img src="./images/5.jpeg" alt="" class="scrapbook-overlay">
+        </div>
+
+        <div class="hero-content">
+            <div class="couple-card glass-card">
+                <div class="couple-images">
+                    <div class="image-wrapper groom">
+                        <img src="./images/groom.jpg" alt="Groom">
+                    </div>
+                    <div class="image-wrapper ampersand">&</div>
+                    <div class="image-wrapper bride">
+                        <img src="./images/bride.jpg" alt="Bride">
+                    </div>
+                </div>
+                <div class="couple-names">
+                    <h1>The Groom & The Bride</h1>
+                </div>
+                <div class="wedding-date">
+                    <p>Save The Date</p>
+                    <span>October 24th, 2026</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section id="countdown" class="countdown section-reveal">
+        <div class="container">
+            <h2 class="section-title">Counting Down to Forever</h2>
+            <div class="timer-grid">
+                <div class="timer-item">
+                    <span id="days">00</span>
+                    <p>Days</p>
+                </div>
+                <div class="timer-item">
+                    <span id="hours">00</span>
+                    <p>Hours</p>
+                </div>
+                <div class="timer-item">
+                    <span id="minutes">00</span>
+                    <p>Minutes</p>
+                </div>
+                <div class="timer-item">
+                    <span id="seconds">00</span>
+                    <p>Seconds</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venue Preview Section -->
+    <section id="venue-preview" class="venue-preview section-reveal">
+        <div class="container">
+            <h2 class="section-title">Where the Magic Happens</h2>
+            <div class="venue-img-wrapper">
+                <img src="./images/venue.jpg" alt="Wedding Venue" class="venue-img">
+                <div class="venue-overlay">
+                    <div class="venue-content">
+                        <p>A place where dreams become reality and two souls become one.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Details Section -->
+    <section id="event-details" class="event-details section-reveal">
+        <div class="container">
+            <div class="details-grid">
+                <div class="detail-card glass-card">
+                    <img src="./icons/ring-icon.png" alt="Ring" class="detail-icon">
+                    <h3>Ceremony</h3>
+                    <p class="time">4:00 PM</p>
+                    <p class="venue-name">The Grand Cathedral</p>
+                </div>
+                <div class="detail-card glass-card">
+                    <img src="./icons/calendar-icon.png" alt="Calendar" class="detail-icon">
+                    <h3>Reception</h3>
+                    <p class="time">6:00 PM</p>
+                    <p class="venue-name">The Moonlight Ballroom</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline section-reveal">
+        <div class="container">
+            <h2 class="section-title">The Celebration Flow</h2>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="time">4:00 PM</span>
+                        <h4>Ceremony</h4>
+                        <p>Witness the exchange of vows under the golden sky.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="time">6:00 PM</span>
+                        <h4>Reception</h4>
+                        <p>Cocktails and light appetizers with beautiful melodies.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="time">8:00 PM</span>
+                        <h4>Dinner</h4>
+                        <p>A curated culinary experience with friends and family.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="time">10:00 PM</span>
+                        <h4>Celebration</h4>
+                        <p>Dancing through the night as we celebrate our love.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location section-reveal">
+        <div class="container">
+            <div class="location-card glass-card">
+                <h2 class="section-title">Join Us There</h2>
+                <p>123 Royal Avenue, Estate Gardens, NY</p>
+                <a href="https://maps.google.com" target="_blank" class="map-btn">Open Location</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dress Code Section -->
+    <section id="dress-code" class="dress-code section-reveal">
+        <div class="container">
+            <h2 class="section-title">Dress Code</h2>
+            <p class="subtitle">Join us in our theme colors</p>
+            <div class="color-palette">
+                <div class="color-item">
+                    <div class="swatch cream"></div>
+                    <span>Cream</span>
+                </div>
+                <div class="color-item">
+                    <div class="swatch gold"></div>
+                    <span>Champagne Gold</span>
+                </div>
+                <div class="color-item">
+                    <div class="swatch sage"></div>
+                    <span>Sage Green</span>
+                </div>
+                <div class="color-item">
+                    <div class="swatch charcoal"></div>
+                    <span>Charcoal</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer section-reveal">
+        <p>Made with love for Groom & Bride</p>
+        <div class="footer-ampersand">&</div>
+        <p>2026</p>
+    </footer>
+
+</main>
+
+<script src="./script.js"></script>
+</body>
+</html>
